@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    font-weight: 200;
+    src: url(https://m.media-amazon.com/images/S/sash/Dv1WQ5DdeMS5qP7.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/e0LnMbFWJC-TMQz.woff) format("woff");
+}
+
+.amazon-header {
+    width: 100%;
+    height: 70px;
+    background-color: #131921;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left-side {
+    width: 160px;
+    height: auto;
+}
+
+.header-link {
+    display: flex;
+    width: auto;
+    text-decoration: none;
+}
+
+.zipcode-side {
+    color: white;
+}
+
+.amazon-logo {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.extend-logo {
+    color: white;
+    text-decoration: none;
+    margin-top: 3px;
+    font: bolder 13.5px inherit;
+}
+
+.zipcode-sprite {
+    background-image: url(https://m.media-amazon.com/images/G/32/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB546817485_.png);
+    background-position: -71px -378px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 18px;
+    margin: 12px 2px 0 0;
+
+    display: inline-block;
+}
+
+.zipcode-side {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.zipcode-part1 {
+    color: rgba(206, 206, 206, 0.884);
+    font: normal 14px arial;
+}
+
+.zipcode-part2 {
+    color: white;
+    font: bolder 13.5px arial;
+}
+
+.search-bar-area {
+    display: flex;
+    flex: 1 1;
+    max-width: 900px;
+    height: 40px;
+    align-items: center;
+}
+
+.select-input {
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    color: #585858;
+    background-color: rgb(209, 209, 209);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgba(151, 151, 151, 0.705);
+}
+
+.select-option {
+    padding: 5px;
+}
+
+.search-bar-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.search-bar-input::placeholder {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.box-magnifying-glass {
+    background-color: rgba(255, 170, 13, 0.842);
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.magnifying-glass-img {
+    width: 18px;
+    height: 18px;
+}
+
+.header-right-side {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: white;
+}
+
+.login-side {
+    font: normal 14px arial;
+}
+
+.orders-side {
+    font: normal 14px arial;
+    margin: 20px;
+}
+
+.box-cart {
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.cart-img {
+    height: 30px;
+}
+
+.cart-quantity {
+    color: orange;
+    position: absolute;
+    top: -3px;
+    left: 22px;
+}
