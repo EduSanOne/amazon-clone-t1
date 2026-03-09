@@ -26,27 +26,32 @@ main {
 }
 
 .banner-promo-box {
+    display: flex;
+    justify-self: center;
+    align-items: center;
     position: relative;
     height: 600px;
     width: 100%;
-    background-color: green;
-}   
+}
 
-.banner-promo-img {
-    position: relative;
-    background-image: url(../images/amazon-download-utility/banner-firetv.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
+.slides-promo {
+    display: flex;
     width: 100%;
 }
 
-.banner-promo-box::after {
-    position: absolute;
-    content: "";
+.promo-image {
+    height: 600px;
     width: 100%;
-    height: 200px;
-    background: linear-gradient(to bottom, rgb(32, 165, 101)1%,rgb(125,199,163), rgb(227,230,230));
+}
+
+
+
+.buttons-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
 }
 
 .grid-layout {
@@ -67,6 +72,8 @@ main {
     padding: 20px;
 }
 
+
+
 .product-title-box {
     grid-column: span 2;
     display: flex;
@@ -85,6 +92,6 @@ main {
 }
 
 .product {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
 }
