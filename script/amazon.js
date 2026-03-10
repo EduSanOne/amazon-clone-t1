@@ -33,3 +33,56 @@ for(let i = 0; i < 32; i++){
 
     document.querySelector(`.js-products-box-${boxIndex}`).innerHTML += productHTML;
 }
+
+let maxQuantity = 1;
+let quantityMoved = 0;
+
+document.querySelector('.js-button-right').addEventListener('click', ()=>{
+    
+    if (maxQuantity == 7) {
+        maxQuantity = 1;
+        quantityMoved = 0;
+        
+        document.querySelectorAll('.promo-image').forEach((element) => {
+            console.log(quantityMoved)
+            element.style.transform = `translateX(-${quantityMoved}%)`;
+        })
+
+    } else {
+        quantityMoved += 100;
+        maxQuantity++
+        
+        document.querySelectorAll('.promo-image').forEach((element) => {
+           
+            element.style.transform = `translateX(-${quantityMoved}%)`;
+            
+        })
+    }
+    
+   
+})
+
+document.querySelector('.js-button-left').addEventListener('click', ()=>{
+    
+    if (maxQuantity == 7) {
+        maxQuantity = 1;
+        quantityMoved = 700;
+        
+        document.querySelectorAll('.promo-image').forEach((element) => {
+            console.log(quantityMoved)
+            element.style.transform = `translateX(-${quantityMoved}%)`;
+        })
+
+    } else {
+        quantityMoved += 100;
+        maxQuantity++
+        
+        document.querySelectorAll('.promo-image').forEach((element) => {
+           
+            element.style.transform = `translateX(-${quantityMoved}%)`;
+            
+        })
+    }
+    
+   
+})
