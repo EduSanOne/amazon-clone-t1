@@ -29,21 +29,20 @@ main {
     display: flex;
     position: relative;
     height: 800px;
-    width: 90%;
+    width: 82%;
     overflow: hidden;
 }
 
 .slides-promo {
     display: flex;
-    justify-content: center;
     width: 100%;
     position: relative;
+    transition: transform 0.4s ease;
 }
 
 .promo-image {
-    height: 800px;
+    height: 600px;
     width: 100%;
-    flex-shrink: 0;
     transition: 0.5s;
 }
 
@@ -64,8 +63,8 @@ main {
 }
 
 #button-right {
-    padding: 50px 20px;
-    
+    padding: 50px 29px;
+    margin-right: 10px;
 }
 #button-left {
     padding: 50px 20px;
@@ -73,11 +72,12 @@ main {
 
 .grid-layout {
     display: grid;
+    justify-content: center;
+    margin-top: -550px;  /* this creates the overlap effect */
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 350px);
     grid-template-rows: repeat(2, 400px);
     width: 98%;
-    margin-top: -500px; /* this creates the overlap effect */
     z-index: 0;
 }
 
@@ -88,8 +88,6 @@ main {
     background-color: white;
     padding: 20px;
 }
-
-
 
 .product-title-box {
     grid-column: span 2;
@@ -109,6 +107,17 @@ main {
 }
 
 .product {
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    max-width: 130px;
+}
+
+.products-container-2 {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+}
+
+.slide-category {
+    display: flex;
+    width: 100%;
 }

@@ -16,7 +16,6 @@ for(let i = 0; i < 8; i++){
 
 document.querySelector('.grid-layout').innerHTML = productsboxHTML;
 
-
 let productHTML = '';
 
 // Add the 32 products
@@ -34,55 +33,27 @@ for(let i = 0; i < 32; i++){
     document.querySelector(`.js-products-box-${boxIndex}`).innerHTML += productHTML;
 }
 
-let maxQuantity = 1;
-let quantityMoved = 0;
+const slides = document.querySelector('.slides-promo');
+const totalSlides = document.querySelectorAll('.promo-image').length;
 
-document.querySelector('.js-button-right').addEventListener('click', ()=>{
-    
-    if (maxQuantity == 7) {
-        maxQuantity = 1;
-        quantityMoved = 0;
-        
-        document.querySelectorAll('.promo-image').forEach((element) => {
-            console.log(quantityMoved)
-            element.style.transform = `translateX(-${quantityMoved}%)`;
-        })
+let index = 0;
 
-    } else {
-        quantityMoved += 100;
-        maxQuantity++
-        
-        document.querySelectorAll('.promo-image').forEach((element) => {
-           
-            element.style.transform = `translateX(-${quantityMoved}%)`;
-            
-        })
+document.querySelector('.js-button-right').addEventListener('click', () => {
+    index++;
+
+    if (index >= totalSlides) {
+        index = 0;
     }
-    
-   
-})
 
-document.querySelector('.js-button-left').addEventListener('click', ()=>{
-    
-    if (maxQuantity == 7) {
-        maxQuantity = 1;
-        quantityMoved = 700;
-        
-        document.querySelectorAll('.promo-image').forEach((element) => {
-            console.log(quantityMoved)
-            element.style.transform = `translateX(-${quantityMoved}%)`;
-        })
+    slides.style.transform = `translateX(-${index * 100}%)`;
+});
 
-    } else {
-        quantityMoved += 100;
-        maxQuantity++
-        
-        document.querySelectorAll('.promo-image').forEach((element) => {
-           
-            element.style.transform = `translateX(-${quantityMoved}%)`;
-            
-        })
+document.querySelector('.js-button-left').addEventListener('click', () => {
+    index--;
+
+    if (index < 0) {
+        index = totalSlides - 1;
     }
-    
-   
-})
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+});

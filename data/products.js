@@ -1,5 +1,56 @@
 export const products = [
   {
+    image: "https://m.media-amazon.com/images/I/61fzMP+102L._AC_SY145_.jpg" 
+  },
+  {
+    image: "https://m.media-amazon.com/images/I/51yz70Az8ZL._AC_SY145_.jpg"
+  },
+  {
+    image: "https://m.media-amazon.com/images/I/51xjK+rVUGL._AC_SY145_.jpg"
+  },
+  {
+    image: "https://m.media-amazon.com/images/I/41dv7LltRmL._AC_SY145_.jpg"
+  },
+  // BOX2
+  {
+    image: "https://m.media-amazon.com/images/I/61-TzEg09KL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/41+jLq6yJKL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/51DXSY5XOCL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/71+kXnOiM2L._AC_SY145_.jpghttps://m.media-amazon.com/images/I/71+kXnOiM2L._AC_SY145_.jpg"
+  },
+  // BOX 3
+    {
+    image: "https://m.media-amazon.com/images/I/31RU-AWsqOL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/417ozQsic1L._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/51F-QYEyrCL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/719nfYqKCwL._AC_SY145_.jpg"
+  },
+  // BOX 4
+    {
+    image: "https://m.media-amazon.com/images/I/91BaRXWXTYL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/71C3uWkeCuL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/61quo7cAKtL._AC_SY145_.jpg"
+  },
+    {
+    image: "https://m.media-amazon.com/images/I/91Tyq-pOAeL._AC_SY145_.jpg"
+  },
+  {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
     name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
@@ -660,5 +711,5 @@ export const products = [
 ];
 
 export const titles = [
-  'Continue de onde parou', 'Continue comprando ofertas','Ofertas em Livros', 'Veja mais categorias', 'Ofertas melhores avaliadas', 'Ofertas de Dispositivos da Amazon', 'Só no app: 10% off extra com cupom VEMPRALOLA', 'Eleve sua rotina de beleza'
+  'Ofertas inspiradas em seu histórico recente', 'Continue comprando ofertas','Ofertas escolhidas apenas para você', 'Veja mais categorias', 'Ofertas melhores avaliadas', 'Ofertas de Dispositivos da Amazon', 'Só no app: 10% off extra com cupom VEMPRALOLA', 'Eleve sua rotina de beleza'
 ];
