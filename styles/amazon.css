@@ -19,17 +19,19 @@ main {
 }
 
 .products-container {
+    max-width: 1500px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .banner-promo-box {
     display: flex;
     position: relative;
-    height: 800px;
-    width: 82%;
+    height: 850px;
+    width: 85%;
     overflow: hidden;
 }
 
@@ -41,9 +43,10 @@ main {
 }
 
 .promo-image {
-    height: 600px;
+    height: 650px;
     width: 100%;
     transition: 0.5s;
+    background: linear-gradient(100%, 0%);
 }
 
 .buttons-slide {
@@ -73,11 +76,11 @@ main {
 .grid-layout {
     display: grid;
     justify-content: center;
-    margin-top: -550px;  /* this creates the overlap effect */
+    margin-top: -580px;  /* this creates the overlap effect */
     gap: 20px;
-    grid-template-columns: repeat(4, 350px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 400px);
-    width: 98%;
+    width: 100%;
     z-index: 0;
 }
 
@@ -112,12 +115,42 @@ main {
 }
 
 .products-container-2 {
-    overflow: hidden;
+    margin-top: 20px;
     width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
     background-color: white;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .slide-category {
     display: flex;
     width: 100%;
+}
+
+.titulo-slides {
+    display: flex;
+    font: normal 20px arial;
+    margin: 10px;
+    justify-content: start;
+}
+
+.buttons-slide-category {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#button-left-category {
+    padding: 50px 20px;
+}
+
+#button-right-category {
+    padding: 50px 20px;
 }
