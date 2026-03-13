@@ -43,10 +43,17 @@ main {
 }
 
 .promo-image {
-    height: 650px;
+    display: flex;
+    align-self: flex-start;
     width: 100%;
     transition: 0.5s;
-    background: linear-gradient(100%, 0%);
+}
+
+.promo-image::after {
+    content: "";
+    height: 300px;
+    width: 100%;
+    background-color: red;
 }
 
 .buttons-slide {
